@@ -14,3 +14,11 @@ This is the "Fuck, i'm late" project.
 5. goapp get github.com/go-martini/martini
 6. goapp get github.com/codegangsta/martini-contrib/binding
  
+------------------
+
+## Setup node.js enviroment ##
+
+1. Download and install: http://nodejs.org/
+2. Execute on cmd prompt: npm install restify
+3. Problem: Error: ENOENT, stat... Create that folder!
+4. Problem: Could not load the Visual C++ component "VCBuild.exe" > Download: http://www.microsoft.com/de-de/download/confirmation.aspx?id=19988, http://www.microsoft.com/en-us/download/confirmation.aspx?id=8279

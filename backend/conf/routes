@@ -1,0 +1,22 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                                               controllers.Application.index()
+GET     /users                                          controllers.UserController.getAllUser()
+POST    /users                                          controllers.UserController.createUser()
+GET     /users/$id<[0-9]+>                              controllers.UserController.getUser(id: Long)
+PUT     /users/$id<[0-9]+>                              controllers.UserController.updateUser(id: Long)
+DELETE  /users/$id<[0-9]+>                              controllers.UserController.deleteUser(id: Long)
+# GET     /users/$id<[0-9]+>/messages                     controllers.MessagesController.getAllUserMessages(id: Long)
+# POST    /users/$id<[0-9]+>/messages                     controllers.MessagesController.createNewMessage(id: Long)
+# GET     /users/$id<[0-9]+>/messages/$msgId<[0-9]+>      controllers.MessagesController.getMessage(id: Long)
+# DELETE  /users/$id<[0-9]+>/messages/$msgId<[0-9]+>      controllers.MessagesController.deleteMessage(id: Long)
+# GET     /users/$id<[0-9]+>/friends                      controllers.FriendsController.getUserFriends(id: Long)
+# POST    /users/$id<[0-9]+>/friends                      controllers.FriendsController.createFriend(id: Long)
+# DELETE  /users/$id<[0-9]+>/friends/$friendId<[0-9]+>    controllers.FriendsController.deleteFriend(id: Long)                
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
